@@ -5,10 +5,10 @@ function findMatching(drivers,str){
 }
 
 function fuzzyMatch(drivers,str){
-  return drivers.filter(driver => driver.)
+  return drivers.filter(driver => driver.charAt(0) === str.charAt(0))
   
 }
 
-function matchName() {
-  
+function matchName(drivers,str) {
+return drivers.filter(driver => driver.name === str.name)
 }
